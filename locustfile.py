@@ -1,6 +1,9 @@
 from locust import HttpUser, task
 
-class HelloWorldUser(HttpUser):
+class getprime(HttpUser):
     @task
-    def hello_world(self):
+    def getprime(self):
         self.client.get("prime/2")
+    @task
+    def getprime(self):
+        self.client.get("prime/10")
