@@ -5,10 +5,10 @@ class getprime(HttpUser):
     def getprime(self):
         self.client.get("prime/2")
         
-    @task
+    @task(2)
     def getprime(self):
         self.client.get("prime/999999")
      
-    @task
+    @task(3)
     def getprime(self):
         self.client.get("time")
