@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from PIL import Image, ImageChops
 import math
-from matplotlib import pyplot as plt
 import secrets
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
